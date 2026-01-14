@@ -11,6 +11,7 @@
 
 	"args": {
       "USERNAME": "vscode",
+	  "GROUPNAME": "ds2002",
 	  "USER_UID": "1000",
 	  "USER_GID": "1000",
       "NODE_ENV": "development"
