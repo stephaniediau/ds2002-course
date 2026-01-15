@@ -1290,7 +1290,7 @@ echo $HOME
 
 Your output may look like this:
 ```bash
-/home/codespace
+/home/vscode
 ```
 
 The `$` symbol tells the shell to expand the variable name. `$HOME` is a built-in environment variable that contains the path to your home directory.
@@ -1307,7 +1307,7 @@ echo $PATH
 
 Example output:
 ```bash
-/home/codespace
+/home/vscode
 vscode
 /workspaces/ds2002-course
 /usr/local/bin:/usr/bin:/bin
@@ -1327,7 +1327,7 @@ env
 
 Example Output:
 ```bash
-HOME=/home/codespace
+HOME=/home/vscode
 USER=vscode
 PATH=/usr/local/bin:/usr/bin:/bin
 SHELL=/bin/bash
@@ -1945,25 +1945,25 @@ The `whoami` command displays the username of the current user. In Codespaces, t
 groups
 ```
 
-Your output may look like this:
+In Codespace your output may look like this:
 ```bash
-vscode
+ds2002 vscode docker
 ```
 
-Shows all groups that the current user belongs to. In this case, the user `vscode` belongs to the group `vscode`. Groups are used for managing file permissions and access control.
+Shows all groups that the current user belongs to. In this case, the user `vscode` belongs to the groups `vscode`, `ds2002` and `docker`. These are just examples; the exact groups in your environment will likely differ. Groups are used for managing file permissions and access control.
 
 **Who else is in my group?**
 
 ```bash
-getent group vscode   # replace vscode with your group name
+getent group ds2002   # replace vscode with your group name
 ```
 
 Your output may look like this:
 ```bash
-vscode:x:1000:vscode
+ds2002:x:1000:vscode
 ```
 
-- `vscode` - Group name
+- `ds2002` - Group name
 - `x` - Password field (usually `x` means password is stored elsewhere)
 - `1000` - Group ID (GID)
 - `vscode` - List of users in this group (comma-separated if multiple)
@@ -2132,4 +2132,5 @@ These advanced commands help you understand and manage your system at a deeper l
 
 ## Resources
 
-<a href="https://learning.rc.virginia.edu/tutorials/unix-tutorial/" target="_blank" rel="noopener noreferrer">UVA Research Computing's Unix Tutorial</a>
+- <a href="https://learning.rc.virginia.edu/tutorials/unix-tutorial/" target="_blank" rel="noopener noreferrer">UVA Research Computing's Unix Tutorial</a>
+- [Linux Commands](https://www.linuxjournal.com/tag/commands)
