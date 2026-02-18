@@ -27,7 +27,7 @@ def extract(url):
     """
     Extracts data from the ISS API and returns it as a JSON object.
     """
-    logging.info(f"Getting data from URl")
+    logging.info(f"Getting data from URL: {url}")
     try:
         response = requests.get(url)
         response.raise_for_status()
@@ -42,7 +42,7 @@ def transform(data):
     """
     Transforms the extracted data into a pandas DataFrame with timestamp.
     """
-    logging.info(f"Transforming data")
+    logging.info(f"Transforming 1 row of data")
 
     timestamp = pd.to_datetime(data["timestamp"], unit="s")
     latitude = float(data["iss_position"]["latitude"])
@@ -78,7 +78,7 @@ def main():
     df = transform(data)
     load(df, csv_file)
 
-    logging.info(f"Processed {len(df)} record")
+    logging.info(f"ETL process completed successfully!")
 
 if __name__ == "__main__":
     main()
