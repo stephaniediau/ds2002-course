@@ -7,7 +7,9 @@ mywork_khs/
 dataprojects/*
 **OLD*
 **class-*
-
+.venv/
+env/
+venv/
 # Jekyll
 _site/
 .sass-cache/
