@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-from turtle import done
 import requests
 import json
 import pandas as pd
