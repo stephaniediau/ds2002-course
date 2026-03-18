@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 
-
-import sys
+import os
 import boto3
 from botocore.exceptions import ClientError
 
-bucket_name = "mybucket"
+bucket_name = "mybucket-" + os.environ.get("USER")
+print (bucket_name)
 
 try:
     s3 = boto3.client("s3", region_name="us-east-1")

@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 
 import boto3
+from botocore.exceptions import ClientError
 
-bucket_name = "mybucket"        # update this to the bucket you want to use, make sure it exists
-prefix = "folder/in/bucket/"    # update this to the prefix you want to use, make sure it is a valid prefix for the bucket
+bucket_name = "ds2002-khs3z"        # update this to the bucket you want to use, make sure it exists
+prefix = ""    # update this to the prefix you want to use, make sure it is a valid prefix for the bucket
 
 try:
     s3 = boto3.client("s3")
