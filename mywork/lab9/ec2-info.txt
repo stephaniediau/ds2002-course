@@ -14,10 +14,10 @@
   "InstanceId": "i-0a6918c494f7f0022",
   "InstanceType": "t2.nano",
   "InstanceName": "ds2002-private",
-  "PublicIpAddress": "54.237.238.122",
+  "PublicIpAddress": null,
   "State": {
-    "Code": 16,
-    "Name": "running"
+    "Code": 80,
+    "Name": "stopped"
   }
 }
 {
@@ -91,10 +91,10 @@
   "InstanceId": "i-0a0d81b30a0f21031",
   "InstanceType": "t2.nano",
   "InstanceName": "ds2002-khs3z-test",
-  "PublicIpAddress": "54.91.20.146",
+  "PublicIpAddress": null,
   "State": {
-    "Code": 16,
-    "Name": "running"
+    "Code": 80,
+    "Name": "stopped"
   }
 }
 {
@@ -125,6 +125,17 @@
   "InstanceType": "t2.nano",
   "InstanceName": "ds2002-sub5gd",
   "PublicIpAddress": "107.22.149.224",
+  "State": {
+    "Code": 16,
+    "Name": "running"
+  }
+}
+{
+  "ImageId": "ami-0ec10929233384c7f",
+  "InstanceId": "i-02b5426f9c7d809c4",
+  "InstanceType": "t2.nano",
+  "InstanceName": "ds2002-ntq7zt",
+  "PublicIpAddress": "3.93.162.31",
   "State": {
     "Code": 16,
     "Name": "running"
@@ -334,6 +345,39 @@
   "InstanceType": "t2.nano",
   "InstanceName": "ds2002-xyb9vz",
   "PublicIpAddress": "54.226.167.141",
+  "State": {
+    "Code": 16,
+    "Name": "running"
+  }
+}
+{
+  "ImageId": "ami-04680790a315cd58d",
+  "InstanceId": "i-06aae153fa20177ef",
+  "InstanceType": "t2.nano",
+  "InstanceName": "ds2002-thc8mr",
+  "PublicIpAddress": "52.23.156.95",
+  "State": {
+    "Code": 16,
+    "Name": "running"
+  }
+}
+{
+  "ImageId": "ami-0ec10929233384c7f",
+  "InstanceId": "i-05e740ef1abcb7705",
+  "InstanceType": "t2.nano",
+  "InstanceName": "ds2002-ced5jz",
+  "PublicIpAddress": "34.234.97.154",
+  "State": {
+    "Code": 16,
+    "Name": "running"
+  }
+}
+{
+  "ImageId": "ami-0ec10929233384c7f",
+  "InstanceId": "i-0cffe195c4df0f60b",
+  "InstanceType": "t2.nano",
+  "InstanceName": "ds2002-dad8hw",
+  "PublicIpAddress": "98.89.25.144",
   "State": {
     "Code": 16,
     "Name": "running"
