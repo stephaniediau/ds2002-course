@@ -1,0 +1,4 @@
+name	home_state	food	drink
+Ana	Pennsylvania	Japchae	Water
+Oliver	North Carolina	Salad	Water
+Ivan	Michigan	Curry	Water
